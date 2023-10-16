@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<title>First Project </title>
+<title>Trip </title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
     <nav class="topnav" id="myTopnav"  >
         <a href="#news"><img src="images/bus.png"  class="imgs" width="200" height="100" alt=""></a>
         <a class="c-name" href="">Company Name</a>
-        <a class="nav-a" href="#login"><select name="" id=""> <option>ENG</option></select></a>
-        <a class="nav-a" id="" href="#Sing Up">Sing Up</a>
+        <a class="nav-a" href="#login"><select name="" id=""> <option>ENG</option> <option>AR</option></select></a>
+        <a class="nav-a" id="" href="#sing_up">Sing Up</a>
         <a class="nav-a" href="#login">Login</a>
         <a class="nav-a" href="#contact">Contact</a>
         <a class="nav-a" href="#book" >Book</a>
@@ -46,17 +46,18 @@
     <div class="d-center" id="div_form">
         <form action="">
             <h1 class="t-center">Book Your Trip</h1>
-            <select  ><option value=""></option> <option value="">Syria</option></select>
-            <input type="text" name="" id="">
+            <select > <option value="" disabled selected>From</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
+            <select > <option value="" disabled selected>To</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
+
             <input type="date" name="" id="">
             <div ><button class="btn " >Book</button></div>
             </form>
       </div>
 </section>
 
-<section class="d-center">
+<!-- <section class="d-center">
     <h1>we offer best services</h1>
-</section>
+</section> -->
 
 </div>
 
@@ -101,19 +102,7 @@
 
 
 
-<script>
-function view_nav() 
-{
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") 
-  {
-    x.className += " responsive";
-  } else 
-  {
-    x.className = "topnav";
-  }
-}
-</script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
