@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" ></script>
+<link rel="stylesheet" href="css/style.css">
+<title>Trip</title>
+</head>
+<body>
+<div class="basic">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid ">
+        <li >
+            <img src="images/bus.png"  class="imgs" width="150" height="80" alt="">
+        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         
+       
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <a class="nav-a nav-link " href="#news">Company Name</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-a nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-a nav-link" href="#services">Our Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-a nav-link" href="#book" >Book</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-a nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <div class=" nav-a nav-link dropdown">
+              <button class="custom_bottom btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Create Account </a></li>
+              </ul>
+            </div>
+        </li>
+        
+        <li>
+            <a class="nav-a nav-link" href="#login"><select   id=""> <option>ENG</option> <option>AR</option></select></a>
+        </li>	
+        </ul>		  
+      </div>
+    </div>
+  </nav>
+
+<header class="container mt-5" id="home">
+    <div class="row">
+       <div class=" col-6 align-self-center">
+        <div class=" d-flex justify-content-center mt-5 mb-5" >
+          <h1  class="text-center text-break fs-2">The best company for travel anywhere and anytime for you, Book your trip today and start your adventure!</h1>
+        </div>
+        <div class="d-flex justify-content-center  pb-5 pt-5" >
+          <a  class="fs-5 btn custom_bottom p-3 header_btn" href="#book">  Book</a>  
+          <a  class="fs-5 btn custom_bottom p-3 header_btn"href="#services"> Services </a>
+        </div>
+       </div>
+       <div class="col-6 align-self-end">
+        <img class=" img-fluid rounded mx-auto d-block rounded " src="images/travel.svg" alt="">
+       </div>
+    </div>
+
+</header>
+
+
+  
+<section id="services">
+  <div id="carousel_services"  class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner" >
+      <div class="carousel-item active" >
+          <div class="row" >
+              <div class="col-lg-4 d-flex mt-3 mb-3 justify-content-center" >
+                 <div class="card" >
+                    <div class="card-body">
+                      <img src="images/tv.png" width="175" height="220" class="card-img" alt="...">
+                      <h5 class="card-title">Watch tv</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   </div>
+                 </div>
+              </div>
+              <div class="col-lg-4 d-flex mt-3 mb-3 justify-content-center">
+                  <div class="card" >
+                    <div class="card-body">
+                      <img src="images/meal.svg" width="175" height="220" class="card-img" alt="...">
+                      <h5 class="card-title text-center">The meal</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 d-flex mt-3 mb-3 justify-content-center">
+                  <div class="card" >
+                    <div class="card-body">
+                      <img src="images/wifi.png" width="175" height="220"  class="card-img" alt="...">
+                      <h5 class="card-title text-center">Free Wifi</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+       <div class="carousel-item">
+          <div class="row">
+             <div class="col-lg-4 mt-3 mb-3 d-flex justify-content-center">
+                 <div class="card" >
+                   <div class="card-body">
+                     <img src="images/drink.svg" width="175" height="220" class="card-img" alt="...">
+                     <h5 class="card-title text-center">Drink</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   </div>
+                  </div>
+             </div>
+             <div class="col-lg-4 d-flex mt-3 mb-3 justify-content-center">
+               <div class="card" >
+                   <div class="card-body">
+                      <img src="images/wc.svg" width="175" height="220" class="card-img" alt="...">
+                      <h5 class="card-title text-center">Wc</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="col-lg-4 d-flex mt-3 mb-3 justify-content-center">
+                 <div class="card" >
+                    <div class="card-body">
+                            <img src="images/charge.png" width="175" height="220" class="card-img" alt="...">
+                              <h5 class="card-title">Charge your phone</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                 </div>
+             </div>
+             
+         </div>          
+       </div>
+      
+    </div>
+    <button class="carousel-control-prev " type="button" data-bs-target="#carousel_services" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon  " aria-hidden="true"></span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#carousel_services" data-bs-slide="next">
+      <span class="carousel-control-next-icon " aria-hidden="true"></span>
+      <span class="visually-hidden ">Next</span>
+    </button>
+  </div>
+  
+
+</section>
+
+
+<section  class="d-flex justify-content-center" id="book">
+  <div class="d-flex justify-content-center" id="div_form">
+      <form action="">
+          <h1 class="text-center p-5">Book Your Trip</h1>
+          <select class="form-select"> <option value="" disabled selected>From</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
+          <select class="form-select"> <option value="" disabled selected>To</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
+
+          <input class="form-select" type="date" name="" id="">
+          <div ><button class="p-2 mt-2 mb-2 d-flex justify-content-center btn custom_bottom " >Book</button></div>
+          </form>
+    </div>
+
+</section>
+</div>
+
+<footer>
+  <div class="row gy-0 gx-0 g-0">
+    <div class="col-6 gy-0 gx-0 g-0 " >
+        <div class="d-flex justify-content-start ">
+            <a  href="#"><img src="images/bus.png"  class="imgs" width="200" height="100" > </a>
+        </div>
+        <div class="d-flex justify-content-center text-break"> 
+            Travel with us and save money.
+            Explore the world with [Company Name] and create unforgettable memories. 
+            With [Company Name], you can travel anywhere you want in comfort and safety. Our luxurious buses are equipped with the latest amenities, including comfortable seats, bathrooms, and entertainment systems.
+            We offer a variety of trips, including sightseeing tours, business trips, and school trips. We have a team of experienced drivers who will ensure that you have a safe and enjoyable journey.
+            Book your trip today and start your adventure!
+            [Company Name], where memories are made.
+        </div>
+      </div>
+    <div class="col-6 gy-0 gx-0 g-0 contect" id="contact" >
+        <form action="" >
+            <input    class="input" type="email" placeholder="Email">
+            <textarea class="input" name="" id=""  rows="8" placeholder="Enter Your Note ..."></textarea> 
+            <button class="btn d-flex justify-content-center custom_bottom"><span class="fa fa-paper-plane"></span></button>     
+        </form>
+            <ul class="d-flex justify-content-center ul" >
+                <li ><a href="#"><span class="fa fa-brands fa-facebook-f" ></span></a></li>
+                <li ><a href="#"><span class="fa fa-brands fa-twitter   " ></span></a></li>
+                <li ><a href="#"><span class="fa fa-brands fa-instagram " ></span></a></li>
+                <li ><a href="#"><span class="fa fa-brands fa-linkedin  " ></span></a></li>
+            </ul>
+  
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. — Designed  by Wasim Albokae 
+  </p>
+  </div>
+  </footer>
+</body>
+</html>
