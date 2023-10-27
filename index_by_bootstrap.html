@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" ></script>
 <link rel="stylesheet" href="css/new_style.css">
+<script src="js/index.js"></script>
+
 <title>Trip</title>
 </head>
 <body>
@@ -160,13 +162,12 @@
 
 <section  class="d-flex justify-content-center" id="book">
   <div class="d-flex justify-content-center" id="div_form">
-      <form action="">
+      <form id="f" action="">
           <h1 class="text-center p-5">Book Your Trip</h1>
-          <select class="form-select"> <option value="" disabled selected>From</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
-          <select class="form-select"> <option value="" disabled selected>To</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
-
-          <input class="form-select" type="date" name="" id="">
-          <div ><button class="p-2 mt-2 mb-2 d-flex justify-content-center btn custom_bottom " >Book</button></div>
+          <select id="first_select" onchange="change_selecetor(event)" class="form-select"> <option value="" disabled selected>From</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
+          <select id="second_select" class="form-select"> <option value="" disabled selected>To</option>  <option value="">Damascus</option> <option value="">Aleppo</option> <option value="">houms</option> </select>
+          <input  class="form-select" type="date" name="" id="date">
+          <div ><button onclick="submit_form(event)" type="submit" class="p-2 mt-2 mb-2 d-flex justify-content-center btn custom_bottom " >Book</button></div>
           </form>
     </div>
 
@@ -190,8 +191,8 @@
       </div>
     <div class="col-6 gy-0 gx-0 g-0 contect" id="contact" >
         <form action="" >
-            <input    class="input" type="email" placeholder="Email">
-            <textarea class="input" name="" id=""  rows="8" placeholder="Enter Your Note ..."></textarea> 
+            <input onblur="email(event)"   class="input" type="email" placeholder="Email">
+            <textarea onkeydown="change_bg('lightblue',event)" onkeyup="change_bg('white',event)" class="input" name="" id=""  rows="8" placeholder="Enter Your Note ..."></textarea> 
             <button class="btn d-flex justify-content-center custom_bottom"><span class="fa fa-paper-plane"></span></button>     
         </form>
             <ul class="d-flex justify-content-center ul" >
@@ -208,5 +209,6 @@
   </p>
   </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
