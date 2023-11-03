@@ -122,11 +122,12 @@ ul a
     font-size: 1.5rem;
     color: red;
 }
-nav ul a:hover  
+nav ul a:hover , footer ul a:hover
 {
     font-size: 1.5rem;
     color: rgb(240, 236, 11) !important;
 }
+
 a i
 {
     padding: 10px 10px;
@@ -222,13 +223,22 @@ li a .fa-brands
 {
     width: 60%;
 }
-.card-body
-{
-    height: 150px;
-}
+
 .card,.card img
 {
-    border-radius: 75px !important;
+    border-radius: 25px !important;
+}
+.card
+{
+    height: 100%;
+}
+.card-body
+{
+    height:300px;
+}
+.card-img-top
+{
+    height: 250px !important;
 }
 
 
